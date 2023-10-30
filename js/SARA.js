@@ -27,9 +27,9 @@ function Events1() { // SARA
 			splash_screen:
 				'<div class="splash-container">' +
 				'   <div class="text-center"><br><br>' +
-				'	  <img src="static/img/LogoFundacionCG.png" alt="Image" style="width: 500px; height: auto">' +
+				'	  <img src="static/img/LogoFundacionCGV2.png" alt="Image" style="width: 300px; height: auto">' +
 				'   </div>' +
-				'   <h3 class="text-center"style="color: #d12869"><br><br>S.A.R.A - Sistema de Administración y Registro de Actividades<br></h3>' +
+				'   <h3 class="text-center"style="color: #d12869">S.A.R.A - Sistema de Administración y Registro de Actividades<br></h3>' +
 				'   <h4 class="text-center" style="color: #919090">Programa Psicosocial - Coogranada<br><br><br><br>' +
 				'   </h4>' +
 				'   <h6 class="text-center" style="color: #919090">Desarrollado por Sara Duque Ruiz (UdeA). Prohibida su venta, distribución y comercializacion. 2023®' +

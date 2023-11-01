@@ -32,7 +32,7 @@ function Events1() { // SARA
 				'   <h3 class="text-center"style="color: #d12869">S.A.R.A - Sistema de Administración y Registro de Actividades<br></h3>' +
 				'   <h4 class="text-center" style="color: #919090">Programa Psicosocial - Coogranada<br><br><br><br>' +
 				'   </h4>' +
-				'   <h6 class="text-center" style="color: #919090">Desarrollado por Sara Duque Ruiz (UdeA). Prohibida su venta, distribución y comercializacion. 2023®' +
+				'   <h6 class="text-center" style="color: #919090">Desarrollado por Sara Duque Ruiz (UdeA). Prohibida su venta, distribución y comercializacion. 2023 ®' +
 				'   </h6>' +
 				'</div>'
 			//view_first: true

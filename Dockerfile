@@ -9,7 +9,7 @@ RUN apt-get install -y wget
 # Install--> python3, pip package manager and virtualenv
 RUN apt-get install -y python3 python3-pip python3-virtualenv
 # Activate--> Python3 virtualenv
-RUN source /opt/SARA/bin/activate
+RUN sh /opt/SARA/bin/activate
 # Install jam-py package
 RUN /opt/SARA/bin/python3 /opt/SARA/bin/jam-proyect.py
 # Run--> Jam Server

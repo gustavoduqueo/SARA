@@ -10,13 +10,10 @@ RUN apt-get install -y tzdata
 RUN apt-get install -y wget
 # Install--> python3, pip package manager and virtualenv
 RUN apt-get install -y python3 python3-pip python3-virtualenv
-# Set and Activate--> Python3 virtualenv
-RUN python3 -m virtualenv /opt/SARA/
-RUN . /opt/SARA/bin/activate
-# Install jam-py package
+# Create--> Python3 virtualenv
+# RUN python3 -m virtualenv /opt/SARA/
+# Install--> jam-py package
 RUN /opt/SARA/bin/python3 -m pip install jam.py
-RUN cd /opt/SARA/
-RUN /opt/SARA/bin/python3 /opt/SARA/bin/jam-project.py
-# Add sarastart.sh file
+# Add--> sarastart.sh file (virtualenv activate, jam-project create and run SARA server)
 ADD sarastart.sh /opt/SARA/sarastart.sh
-# ENTRYPOINT [ "/bin/bash", "/opt/SARA/sarastart.sh"]
+ENTRYPOINT [ "/bin/bash", "/opt/SARA/sarastart.sh"]

@@ -16,6 +16,5 @@ RUN python3 -m virtualenv /opt/SARA/
 RUN . /opt/SARA/bin/activate && /opt/SARA/bin/python3 -m pip install jam.py
 # Create SARA jam-project
 RUN . /opt/SARA/bin/activate && /opt/SARA/bin/python3 /opt/SARA/bin/jam-project.py
-# Add--> sarastart.sh file (virtualenv activate, jam-project create and run SARA server)
-ADD sarastart.sh /opt/SARA/sarastart.sh
+# Run SARA Python Application
 ENTRYPOINT [ "/opt/SARA/bin/python3", "/opt/SARA/server.py"]

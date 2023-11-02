@@ -16,10 +16,10 @@ Usuarios:
 
 Documentación:
 
-Jam-py:
+Docker:
 
-1. Definición: https://es.wikipedia.org/wiki/Jam.py_(web_framework)#:~:text=Jam.py%20es%20un%20marco,base%20de%20datos%20para%20terceros.
+1. Token: dckr_pat_8MiyibEOqYd1cAWr6nACsmuDtYY
 
-2. Repositorio Github "jam-py": https://github.com/jam-py/jam-py/
+$ docker build -t gustavoduqueo/sara:latest https://github.com/gustavoduqueo/SARA.git
 
-3. Instalación MySQLDatabase: C:\Users\gduqueo\AppData\Local\Programs\Python\Python37\Scripts\pip install mysqlclient
+$ docker run -d --name sara -p 8081:8080 -it  gustavoduqueo/sara:latest

@@ -15,5 +15,5 @@ RUN /opt/SARA/bin/python3 -m pip install jam.py
 RUN cd /opt/SARA/
 RUN /opt/SARA/bin/python3 /opt/SARA/bin/jam-project.py
 # Add sarastart.sh file
-ADD 
-# ENTRYPOINT [ "/opt/SARA/bin/python3", "/opt/SARA/server.py"]
+ADD sarastart.sh /opt/SARA/sarastart.sh
+# ENTRYPOINT [ "/bin/bash", "/opt/SARA/sarastart.sh"]

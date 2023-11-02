@@ -3,6 +3,9 @@ FROM ubuntu:23.10
 # Update and upgrade--> Operating System and TZ
 RUN apt-get update
 RUN apt-get upgrade -y
+ENV TZ=America/Bogota
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+RUN apt-get install -y tzdata
 # Install--> wget
 RUN apt-get install -y wget
 # Install--> python3, pip package manager and virtualenv

@@ -6,8 +6,6 @@ RUN apt-get upgrade -y
 ENV TZ=America/Bogota
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get install -y tzdata
-# Install--> wget
-RUN apt-get install -y wget
 # Install--> python3, pip package manager and virtualenv
 RUN apt-get install -y python3 python3-pip python3-virtualenv
 # Create--> Python3 virtualenv

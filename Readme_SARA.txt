@@ -10,10 +10,6 @@ Usuarios:
 2. Administrator: gduqueo / kV7Dj4bu.
 3. Consulta: consulta / consulta
 
-
-
-
-
 Documentación:
 
 Docker:

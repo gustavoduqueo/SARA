@@ -18,4 +18,4 @@ RUN python3 -m pip install jam.py
 WORKDIR /opt/SARA
 RUN python3 /opt/SARA/bin/jam-project.py
 # Run SARA Python Application
-# ENTRYPOINT [ "/opt/SARA/bin/python3", "/opt/SARA/server.py"]
+ENTRYPOINT [ "/opt/SARA/bin/python3", "server.py"]

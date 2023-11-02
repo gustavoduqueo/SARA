@@ -1,4 +1,4 @@
 Dockerfile
 .github/*
-__pycache__
 *.pyc
+Readme_SARA.txt

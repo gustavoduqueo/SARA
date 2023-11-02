@@ -7,7 +7,7 @@ ENV TZ=America/Bogota
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get install -y tzdata
 # Install--> python3, pip package manager and virtualenv
-RUN apt-get install -y python3 python3-pip python3-virtualenv mysqlclient
+RUN apt-get install -y python3 python3-pip python3-virtualenv
 # Create--> Python3 virtualenv
 ENV VIRTUAL_ENV=/opt/SARA/
 RUN python3 -m virtualenv $VIRTUAL_ENV
@@ -16,7 +16,7 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 RUN python3 -m pip install jam.py
 # Create SARA jam-project
 WORKDIR /opt/SARA
-COPY . /opt/SARA/
+# COPY . /opt/SARA/
 # RUN python3 /opt/SARA/bin/jam-project.py
 # Run SARA Python Application
 ENTRYPOINT [ "/opt/SARA/bin/python3", "server.py"]

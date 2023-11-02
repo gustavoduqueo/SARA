@@ -19,4 +19,4 @@ RUN cd /opt/SARA/
 RUN /opt/SARA/bin/python3 /opt/SARA/bin/jam-project.py
 # Add sarastart.sh file
 ADD sarastart.sh /opt/SARA/sarastart.sh
-ENTRYPOINT [ "/bin/bash", "/opt/SARA/sarastart.sh"]
+# ENTRYPOINT [ "/bin/bash", "/opt/SARA/sarastart.sh"]

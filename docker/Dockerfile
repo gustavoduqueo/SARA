@@ -15,7 +15,7 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 # Install--> jam-py package
 RUN python3 -m pip install jam.py
 # Create SARA jam-project
-RUN cd /opt/SARA
+CMD cd /opt/SARA
 RUN python3 /opt/SARA/bin/jam-project.py
 # Run SARA Python Application
 # ENTRYPOINT [ "/opt/SARA/bin/python3", "/opt/SARA/server.py"]

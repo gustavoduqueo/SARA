@@ -12,11 +12,13 @@ RUN apt-get install -y python3 python3-pip python3-virtualenv
 ENV VIRTUAL_ENV=/opt/SARA/
 RUN python3 -m virtualenv $VIRTUAL_ENV
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
+# Install--> MySQL Python module
+RUN /opt/SARA/bin/python3 -m pip install pymysql
 # Install--> jam-py package
 RUN python3 -m pip install jam.py
 # Create SARA jam-project
 WORKDIR /opt/SARA
-# COPY . /opt/SARA/
+COPY . /opt/SARA/
 RUN python3 /opt/SARA/bin/jam-project.py
 # Run SARA Python Application
 ENTRYPOINT [ "/opt/SARA/bin/python3", "server.py"]

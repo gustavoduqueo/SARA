@@ -20,7 +20,7 @@ $ docker build -t gustavoduqueo/sara:latest https://github.com/gustavoduqueo/SAR
 
 $ docker run -d --restart always --name sara -p 8081:8080 -it  gustavoduqueo/sara:latest
 
+Para descargar el contenedor:
 
-
-
+$ docker pull gustavoduqueo/sara:latest
 

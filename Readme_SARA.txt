@@ -16,9 +16,9 @@ Docker:
 
 1. Token: dckr_pat_8MiyibEOqYd1cAWr6nACsmuDtYY
 
-$ docker build -t gustavoduqueo/sara:latest https://github.com/gustavoduqueo/.git
+$ docker build -t gustavoduqueo/sara:latest https://github.com/gustavoduqueo/SARA.git
 
-$ docker run -d --name sara -p 8081:8080 -it  gustavoduqueo/sara:latest
+$ docker run -d --restart always --name sara -p 8081:8080 -it  gustavoduqueo/sara:latest
 
 
 
